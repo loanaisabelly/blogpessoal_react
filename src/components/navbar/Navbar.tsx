@@ -43,19 +43,11 @@ function Navbar() {
                             Postagens
                         </Link>
 
-                        <Link 
-                            to="/temas" 
-                            className="bg-white bg-opacity-80 px-3.5 py-2 rounded-md shadow-md"
-                        >
-                            Temas
-                        </Link>
+                        <Link to='/temas' className='bg-white border-solid 
+                            border-2 py-2 px-4 transition-all hover:bg-gray-900 hover:text-white  rounded-md shadow-md hover:underline'>Temas</Link>
 
-                        <Link 
-                            to="/cadastrar" 
-                            className="bg-white bg-opacity-80 px-3.5 py-2 rounded-md shadow-md"
-                        >
-                            Cadastrar
-                        </Link>
+                              <Link to='/cadastrartema' className= 'bg-white border-solid border-2 py-2 px-4 transition-all hover:bg-gray-900 hover:text-white  rounded-md shadow-md hover:underline'>
+                              Cadastrar tema</Link>
 
                         <Link 
                             to="/perfil" 
