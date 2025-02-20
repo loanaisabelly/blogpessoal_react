@@ -8,7 +8,7 @@ function Navbar() {
             <div 
                 className="w-full flex justify-center bg-cover bg-center"
                 style={{ 
-                    backgroundImage: "url('https://ik.imagekit.io/23lwgdahj/fundo%20navbar.png?updatedAt=1740058505458')", 
+                    backgroundImage: "url('https://ik.imagekit.io/23lwgdahj/Design%20sem%20nome%20(3).png?updatedAt=1740059125957')", 
                     height: "200px", 
                 
                 }}
