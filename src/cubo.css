@@ -26,17 +26,17 @@
    
 }
 
-.cube .front  { background-color: #e24c16;
+.cube .front  { background-color: #ef08c5;
    transform: rotateY(  0deg) translateZ(50px); }
-.cube .back   {background-color: #16c1d8;
+.cube .back   {background-color: #5cdaea;
      transform: rotateY(180deg) translateZ(50px); }
-.cube .left   { background-color: #35bb5d;
+.cube .left   { background-color: #99efb3;
     transform: rotateY(-90deg) translateZ(50px); }
-.cube .right  { background-color: #f0dd10;
+.cube .right  { background-color: #eadf89;
    transform: rotateY( 90deg) translateZ(50px); }
-.cube .top    { background-color:  #552aca;
+.cube .top    { background-color:  #9d7ef0;
    transform: rotateX( 90deg) translateZ(50px); }
-.cube .bottom { background-color: #f10707;
+.cube .bottom { background-color: #f96b6b;
    transform: rotateX(-90deg) translateZ(50px); }
 
 @keyframes rotate {
