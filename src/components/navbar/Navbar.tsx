@@ -1,8 +1,22 @@
-import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { AuthContext } from "../../context/AuthContext";
 
-
+ 
 
 function Navbar() {
+    
+    const navigate = useNavigate();
+
+    const { handleLogout } = useContext(AuthContext)
+
+    function logout() {
+
+        handleLogout()
+        alert('O Usuário foi desconectado com sucesso!')
+        navigate('/')
+    }
+
     return (
         <>
             <div 
@@ -37,10 +51,10 @@ function Navbar() {
                         </Link>
 
                         <Link 
-                            to="/cadastrar-tema" 
+                            to="/cadastrar" 
                             className="bg-white bg-opacity-80 px-3.5 py-2 rounded-md shadow-md"
                         >
-                            Cadastrar Tema
+                            Cadastrar
                         </Link>
 
                         <Link 
@@ -50,9 +64,10 @@ function Navbar() {
                             Perfil
                         </Link>
 
-                        <Link 
-                            to='/login' 
-                            className="bg-white bg-opacity-80 px-3.5 py-2 rounded-md shadow-md"
+                        <Link  
+                            to='' onClick={logout} 
+                            className="bg-white border-solid 
+                            border-2 py-2 px-4 transition-all hover:bg-gray-900 hover:text-white  rounded-md shadow-md hover:underline"
                         >
                             Sair
                         </Link>

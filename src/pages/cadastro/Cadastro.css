@@ -1,4 +1,4 @@
-.fundoLogin {
+.fundoCadastro {
     background-image: url("https://ik.imagekit.io/23lwgdahj/Cat%20GIF%20by%20happydog%20-%20Find%20&%20Share%20on%20GIPHY.gif?updatedAt=1740063157578");
     background-repeat: no-repeat;
     background-size: contain; 
@@ -8,4 +8,5 @@
     border-radius: 60%; 
     border: 5px solid  #000;
     
-}
+  
+  }
