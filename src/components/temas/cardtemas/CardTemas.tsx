@@ -7,21 +7,23 @@ interface CardTemasProps{
 
 function CardTemas({ tema }: CardTemasProps) {
     return (
-        <div className='border flex flex-col rounded-2xl overflow-hidden justify-between'>
-            <header className='py-2 px-6 bg-gray-950 text-white font-bold text-2xl'>
+        <div className='border-slate-900 border 
+            flex flex-col rounded overflow-hidden justify-between'>
+            <header className='py-2 px-6 bg-cyan-50  text-black font-bold text-2xl
+            border-black border-solid border-1 transition-all'>
                 Tema
             </header>
-            <p className='p-8 text-3xl bg-slate-200 h-full'>{tema.descricao}</p>
+            <p className='p-8 text-3xl bg-slate-50 h-full'>{tema.descricao}</p>
 
             <div className="flex">
                 <Link to={`/editartema/${tema.id}`}
-                    className='w-full bg-cyan-800  text-white  
-                    py-2 px-4 items-center justify-center hover:bg-black hover:text-white '>
+                    className='w-full bg-blue-400  text-white  
+                    py-2 px-4 items-center justify-center hover:bg-blue-950 hover:text-white '>
                     <button>Editar</button>
                 </Link>
 
                 <Link to={`/deletartema/${tema.id}`}
-                    className='text-slate-100 bg-red-400 hover:bg-red-700 w-full 
+                    className='text-slate-100 bg-red-400 hover:bg-red-800 w-full 
 		        flex items-center justify-center'>
                     <button>Deletar</button>
                 </Link>

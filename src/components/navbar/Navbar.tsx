@@ -36,12 +36,9 @@ function Navbar() {
                     
                   
                     <div className='flex gap-4 text-gray-800'>
-                        <Link 
-                            to="/postagens" 
-                            className="bg-white bg-opacity-80 px-3.5 py-2 rounded-md shadow-md"
-                        >
-                            Postagens
-                        </Link>
+                        
+                        <Link to='/postagens' className='bg-white border-solid 
+                            border-2 py-2 px-4 transition-all hover:bg-gray-900 hover:text-white  rounded-md shadow-md hover:underline'>Postagens</Link>
 
                         <Link to='/temas' className='bg-white border-solid 
                             border-2 py-2 px-4 transition-all hover:bg-gray-900 hover:text-white  rounded-md shadow-md hover:underline'>Temas</Link>

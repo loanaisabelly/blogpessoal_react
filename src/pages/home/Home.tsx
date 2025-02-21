@@ -1,3 +1,5 @@
+import ListaPostagens from "../../components/postagens/listapostagens/ListaPostagens";
+import ModalPostagem from "../../components/postagens/modalpostagem/ModalPostagem";
 import "../../cubo.css";
 
 
@@ -13,11 +15,10 @@ function Home() {
                         <p className='text-xl amatic-sc-bold'>
                             Expresso aqui meus pensamentos e opniões
                         </p>
-
-                        <div className="flex justify-center gap-4">
-                         <div className='rounded text-black border-black border-solid border-2 py-2 px-4 transition-all hover:bg-gray-900 hover:text-white'>
-                            Nova Postagem
-                         </div>
+                        <div className="flex justify-around gap-4">
+                            <div className="flex justify-around gap-4 ">
+                                <ModalPostagem />
+                           </div>
                         </div>
                     </div>
 
@@ -33,6 +34,7 @@ function Home() {
                 </div>
             </div>
           </div>
+          <ListaPostagens />
         </>
     )
 }
