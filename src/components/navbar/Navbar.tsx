@@ -48,7 +48,7 @@ function Navbar() {
 
                         <Link 
                             to="/perfil" 
-                            className="bg-white bg-opacity-80 px-3.5 py-2 rounded-md shadow-md"
+                            className="bg-white bg-opacity-80 px-3.5 py-2 rounded-md shadow-md hover:underline"
                         >
                             Perfil
                         </Link>
